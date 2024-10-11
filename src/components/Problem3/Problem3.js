@@ -6,11 +6,11 @@ const imageUrls = [
   'https://via.placeholder.com/600/24f355',
   'https://via.placeholder.com/600/d32776',
   'https://via.placeholder.com/600/f66b97',  
-  'https://via.placeholder.com/600/b0f7cc'
-  //'https://via.placeholder.com/600/56a8c2',  
-  //'https://via.placeholder.com/600/54176f',  
-  //'https://via.placeholder.com/600/51aa97',  
-  //'https://via.placeholder.com/600/8e973b'   
+  'https://via.placeholder.com/600/b0f7cc',
+  'https://via.placeholder.com/600/54176f',
+  'https://via.placeholder.com/600/8e973b'  
+  //'https://via.placeholder.com/600/56a8c2',    
+  //'https://via.placeholder.com/600/51aa97',   
 ];
 
 const Problem3 = () => {
@@ -23,7 +23,7 @@ const Problem3 = () => {
     console.log("inside load more images")
     setTimeout(() => {
       const newImages = [];
-      const batchSize = 5;  
+      const batchSize = 7;  
 
       for (let i = 0; i < batchSize; i++) {
         newImages.push(imageUrls[i]);
