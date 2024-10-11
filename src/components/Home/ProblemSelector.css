@@ -74,7 +74,6 @@
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
 }
 
-
 .problem-selector ul li a::after {
   content: '';
   color: #ffffff;
@@ -91,7 +90,6 @@
   transition: opacity 0.3s ease, visibility 0.3s ease, left 0.3s ease;
   font-size: 1rem;
 }
-
 
 .problem-selector ul li:nth-child(1) a::after {
   content: 'Element Transfer';
@@ -113,9 +111,39 @@
   content: 'Box Split';
 }
 
-
 .problem-selector ul li a:hover::after {
   opacity: 1;
   visibility: visible;
   left: 115%; 
+}
+
+
+@media (max-width: 1024px) {
+  .problem-selector {
+    display: none; 
+  }
+
+  
+  .mobile-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;  
+    color: #ffffff;  
+    background-color: black !important; 
+    text-align: center;
+  }
+
+  .mobile-message h2 {
+    font-size: 2.5rem; 
+    margin: 0;
+  }
+
+  .mobile-message p {
+    font-size: 1.5rem; 
+    margin-top: 1rem;
+  }
 }
