@@ -1,0 +1,16 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  div {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  div:hover {
+    background-color: #f0f0f0; 
+  }

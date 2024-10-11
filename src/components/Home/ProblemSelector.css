@@ -1,0 +1,121 @@
+.problem-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: url('https://cdn.pixabay.com/photo/2022/06/23/17/13/ball-7280265_1280.jpg') no-repeat center center/cover;
+}
+
+.problem-selector::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.problem-selector h2 {
+  position: relative;
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  z-index: 2;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); 
+}
+
+.problem-selector ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.problem-selector ul li {
+  margin: 1rem 0;
+  position: relative; 
+}
+
+.problem-selector ul li a {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem-selector ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #2c3e50;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.problem-selector ul li a:active {
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(0);
+}
+
+.problem-selector ul li a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+
+.problem-selector ul li a::after {
+  content: '';
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  position: absolute;
+  left: 105%; 
+  top: 50%;
+  transform: translateY(-50%); 
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, left 0.3s ease;
+  font-size: 1rem;
+}
+
+
+.problem-selector ul li:nth-child(1) a::after {
+  content: 'Element Transfer';
+}
+
+.problem-selector ul li:nth-child(2) a::after {
+  content: 'Nested List Component';
+}
+
+.problem-selector ul li:nth-child(3) a::after {
+  content: 'Infinite Scroll';
+}
+
+.problem-selector ul li:nth-child(4) a::after {
+  content: 'Game: Points for Clicking Right Box';
+}
+
+.problem-selector ul li:nth-child(5) a::after {
+  content: 'Box Split';
+}
+
+
+.problem-selector ul li a:hover::after {
+  opacity: 1;
+  visibility: visible;
+  left: 115%; 
+}

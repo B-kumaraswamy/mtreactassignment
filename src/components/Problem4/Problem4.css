@@ -1,0 +1,53 @@
+.problem4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);  
+  grid-template-rows: repeat(3, 100px);     
+ 
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border: 2px solid #000;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.box.active {
+  background-color: #add8e6; 
+}
+
+
+.box.wrong-hit {
+  background-color: #ff6961; 
+  border-color: #ff0000;     
+}
+
+
+.box.correct-hit {
+  background-color: #77dd77;  
+  border-color: #32cd32;     
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.info p {
+  margin: 5px 0;
+}
